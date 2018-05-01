@@ -15,18 +15,22 @@ class SettingsVC: UIViewController {
     @IBOutlet var soundSwitcher: UISwitch!
     @IBOutlet var lastWordSwitcher: UISwitch!
    
+    var defaults = UserDefaults.standard
     var settings = Settings()
     var sound = SoundPlayer()
     
     @IBAction func soundSW(_ sender: UISwitch) {
-        settings.soundOn = !settings.soundOn
-        print ("Sound is \(settings.soundOn)")
+        soundSwitcher.isOn ? defaults.set(true, forKey: "SoundOn") : defaults.set(false, forKey: "SoundOn")
+        settings.soundOn = defaults.bool(forKey: "SoundOn")
+        print ("  +++\(settings.soundOn)+++  ")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        settings.soundOn = defaults.bool(forKey: "SoundOn")
+        print (settings.soundOn)
         settings.soundOn ? soundSwitcher.setOn(true, animated: false) : soundSwitcher.setOn(false, animated: false)
-        print ("Sound in ViewDidLoad is \(settings.soundOn)")
+        
         
 
         // Do any additional setup after loading the view.
