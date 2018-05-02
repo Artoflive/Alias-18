@@ -30,6 +30,7 @@
 		E7FB0E372097B11400B3CBE6 /* deny.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7FB0E362097B11400B3CBE6 /* deny.wav */; };
 		E7FB0E392097B68300B3CBE6 /* confirm.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7FB0E382097B68300B3CBE6 /* confirm.wav */; };
 		E7FB0E3B2098EC1700B3CBE6 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB0E3A2098EC1700B3CBE6 /* Word.swift */; };
+		E7FB0E3E209A2C7100B3CBE6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7FB0E3C209A2C7100B3CBE6 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		E7FB0E362097B11400B3CBE6 /* deny.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = deny.wav; sourceTree = "<group>"; };
 		E7FB0E382097B68300B3CBE6 /* confirm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = confirm.wav; sourceTree = "<group>"; };
 		E7FB0E3A2098EC1700B3CBE6 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		E7FB0E3D209A2C7100B3CBE6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E7EBBF49207A4DA2007F7808 /* AppDelegate.swift */,
 				E7EBBF5B207BEA75007F7808 /* ChooseViewController.swift */,
 				E7FB0E252094DDF400B3CBE6 /* SettingsVC.swift */,
+				E7FB0E3C209A2C7100B3CBE6 /* DataModel.xcdatamodeld */,
 				E7EBBF4B207A4DA2007F7808 /* ViewController.swift */,
 				E7F9BB30208A6EF5000170BE /* BeginingVC.swift */,
 				E7F9BB32208A75F7000170BE /* PlayVC.swift */,
@@ -236,6 +239,7 @@
 				E7F9BB38208A854A000170BE /* EndOfRoundVC.swift in Sources */,
 				E7F9BB3C208BE8DD000170BE /* WordTableVC.swift in Sources */,
 				E7FB0E352097682900B3CBE6 /* Sound.swift in Sources */,
+				E7FB0E3E209A2C7100B3CBE6 /* DataModel.xcdatamodeld in Sources */,
 				E7F9BB33208A75F7000170BE /* PlayVC.swift in Sources */,
 				E7EBBF4A207A4DA2007F7808 /* AppDelegate.swift in Sources */,
 				E7F9BB3A208A85DA000170BE /* EndOfGameVC.swift in Sources */,
@@ -426,6 +430,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7FB0E3C209A2C7100B3CBE6 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7FB0E3D209A2C7100B3CBE6 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = E7FB0E3D209A2C7100B3CBE6 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E7EBBF3E207A4DA2007F7808 /* Project object */;
 }
